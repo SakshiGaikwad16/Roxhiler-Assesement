@@ -1,0 +1,262 @@
+
+        body {
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250vh;
+            background-color: white
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        
+        
+        /* LED Bulb */
+        .led-bulb {
+            width: 150px;
+            height: 150px;
+            background-color: #999; 
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .led-bulb.on {
+            background-color: #f39c12; /* Yellow when on */
+            box-shadow: 0 0 20px rgba(243, 156, 18, 0.8); /* Glow effect */
+        }
+
+       
+        .bulb-base {
+            width: 60px;
+            height: 30px;
+            background-color: #555;
+            border-radius: 15px;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+      
+        .controls {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .buttonb, .slider {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .buttonb {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        .slider {
+            width: 200px;
+        }
+
+        .slider-label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+
+
+        
+       /* AC unit container */
+.temp{
+    padding-top:100px;
+}
+        
+        .ac-container {
+            width: 250px;
+            height: 150px;
+            background-color: #b0e0e6;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+       
+        .ac-screen {
+            width: 100%;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+     
+        .ac-grill {
+            width: 80%;
+            height: 10px;
+            background-color: #777;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+      
+        .ac-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+      
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 60px;
+        }
+
+        button.off {
+            background-color: #f44336;
+        }
+
+        
+        .ac-status {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+
+
+        /* TV container */
+    .tel
+    {
+        padding-top:150px;
+    }
+        #tv {
+            width: 500px;
+            height: 300px;
+            border: 20px solid #333;
+            border-radius: 20px;
+            background-color: #000;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+       
+        #screen {
+            width: 100%;
+            height: 200px;
+            background-color: #222;
+            display: none; /* Initially off */
+        }
+
+       
+        #video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #b1s {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #444;
+        }
+
+        .b1 {
+            width: 40px;
+            height: 40px;
+            background-color: #888;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .b1:hover {
+            background-color: #bbb;
+        }
+
+        
+        #status {
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    
+
+
+
+
+    
+      
+        /* Centering the container1 */
+        #container1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Image styles */
+        #image {
+            width: 200px;
+            height: 200px;
+            transition: transform 1s linear;
+            margin-bottom: 20px;
+           
+        }
+
+        /* fbutton container1 styles */
+        #fbutton-container1 {
+            text-align: center;
+        }
+
+        .fbutton {
+            width: 100px;
+            height: 40px;
+            background-color: #444;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 30px;
+        }
+
+        .fbutton:hover {
+            background-color: #666;
+        }

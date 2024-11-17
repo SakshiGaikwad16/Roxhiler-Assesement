@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Bulb with On/Off and Brightness Control</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    
+    <div id="led-bulb" class="led-bulb">
+        <div class="bulb-base"></div>
+    </div>
+
+    <div class="controls">
+        <button id="toggleBtn" class="button" onclick="toggleBulb()">Turn On</button>
+        <br>
+        <label for="brightnessSlider" class="slider-label">Adjust Brightness:</label>
+        <input type="range" id="brightnessSlider" class="slider" min="0" max="100" value="100" onchange="adjustBrightness(this.value)">
+    </div>
+
+
+
+<div class="temp">
+    <div class="ac-container">
+        <div class="ac-screen" id="acScreen">Temperature: 24°C</div>
+
+        <div class="ac-grill"></div>
+
+        <div class="ac-buttons">
+
+            <button onclick="changeTemperature(1)">+</button>
+
+           
+            <button onclick="changeTemperature(-1)">-</button>
+
+            
+            <button class="off" onclick="toggleAC()">OFF</button>
+        </div>
+
+        
+        <div class="ac-status" id="acStatus">AC is OFF</div>
+    </div>
+</div>
+
+
+<div class="tel">
+<div id="tv">
+   
+    <div id="screen">
+        <video id="video" src="https://www.w3schools.com/html/mov_bbb.mp4" ></video>
+       
+    </div>
+
+   
+    <div id="b1s">
+      
+        <div class="b1" onclick="toggleTV()">ON/OFF</div>
+    </div>
+
+    
+    <div id="status">TV is OFF</div>
+</div>
+</div>
+
+<div id="container1">
+   
+    <img id="image" src="./image/fan.png" alt="Rotating Image">
+
+  
+    <div id="fbutton-container1">
+        <button class="fbutton" onclick="startRotation()">ON</button>
+        <button class="fbutton" onclick="stopRotation()">OFF</button><br>
+        <button class="fbutton1" onclick="setSpeed(1)">1</button>
+        <button class="fbutton1" onclick="setSpeed(2)">2</button>
+        <button class="fbutton1" onclick="setSpeed(3)">3</button>
+    </div>
+</div>
+
+   <SCRipt src="./script.js"></SCRipt>
+
+</body>
+</html>
